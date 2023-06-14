@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 html{
     font-family: "Century Gothic", serif;
 }
@@ -73,21 +78,85 @@ body{
     justify-content: center;
 }
 
+.l-1 div{
+    background-image: url("./../img/icons/gitHub.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 3rem;
+}
+
 .l-2{
     justify-content: space-evenly;
+}
+
+.l-2 a div{
+    background-image: url("./../img/icons/CV.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.8rem;
+}
+
+.l-2 a:first-child div{
+    background-image: url("./../img/icons/Bootstrap.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.6rem;
 }
 
 .l-3{
     justify-content: space-around;
 }
 
+.l-3 div{
+    background-image: url("./../img/icons/Instagram.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.6rem;
+}
+
+.l-3 a:first-child div{
+    background-image: url("./../img/icons/ContactList.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+}
+
 .l-4{
     justify-content: space-evenly;
+}
+
+.l-4 div{
+    background-image: url("./../img/icons/gmail.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+}
+
+.l-4 a:first-child div{
+    background-image: url("./../img/icons/TaskManager.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
 }
 
 .l-5{
     justify-content: center;
 }
+
+.l-5 div{
+    background-image: url("./../img/icons/portfolio.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.4rem;
+}
+
+nav:hover{
+    cursor: pointer;
+}
+
+
+
+
 
 
 .rotate-center{
@@ -121,5 +190,29 @@ body{
     }
     100%{
         filter:blur(0);opacity:1
+    }
+}
+
+.vibrate:hover{
+    animation:vibrate 0.5s linear both
+}
+@keyframes vibrate{
+    0%{
+        transform:translate(0)
+    }
+    20% {
+        transform:translate(-2px,2px)
+    }
+    40%{
+        transform:translate(-2px,-2px)
+    }
+    60%{
+        transform:translate(2px,2px)
+    }
+    80%{
+        transform:translate(2px,-2px)
+    }
+    100%{
+        transform:translate(0)
     }
 }
