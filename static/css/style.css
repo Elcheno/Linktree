@@ -11,7 +11,7 @@
 }
 
 html{
-    font-family: "Century Gothic", serif;
+    font-family: "Century Gothic", SansSerif, serif;
 }
 
 body{
@@ -67,7 +67,6 @@ hr{
     }
 
 .wrapper .container .subcontainer{
-    width: 100%;
     height: fit-content;
     align-self: center;
 }
@@ -299,17 +298,35 @@ hr{
 @media only screen and (max-width: 599px) {
     .wrapper .container{
         width: 100vw;
+        background-size: 280rem;
+    }
+
+    .wrapper .container .subcontainer{
+        scale: 2;
+        width: 60%;
     }
 }
 
 @media only screen and (min-width: 600px) {
     .wrapper .container{
-        width: 80vw;
+        width: 100vw;
+        background-size: 280rem;
+    }
+
+    .wrapper .container .subcontainer{
+        scale: 2;
+        width: 60%;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .wrapper .container{
         width: 40vw;
+        background-size: 120rem;
+    }
+
+    .wrapper .container .subcontainer{
+        scale: 1;
+        width: 100%;
     }
 }
