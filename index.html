@@ -9,8 +9,8 @@
 
     <div class="wrapper">
 
-        <div class="header">
-            <p>NOMBRE</p>
+        <div class="header blur-in">
+            <p>Elcheno</p>
         </div>
 
         <div class="container">
@@ -18,40 +18,40 @@
             <div class="subcontainer rotate-center">
 
                 <div class="l-1 rotate-top">
-                    <a href="https://github.com/Elcheno" class="vibrate" target="_blank">
+                    <a href="https://github.com/Elcheno" class="vibrate blur-out-contract" target="_blank">
                         <div class="blur-in"></div>
                     </a>
                 </div>
 
                 <div class="l-2 rotate-top">
-                    <a href="https://elcheno.github.io/Bootstrap-Page/" class="vibrate" target="_blank">
+                    <a href="https://elcheno.github.io/Bootstrap-Page/" class="vibrate blur-out-contract" target="_blank">
                         <div class="blur-in"></div>
                     </a>
-                    <a href="#" class="vibrate disabled" target="_blank">
+                    <a href="#" class="vibrate disabled blur-out-contract" target="_blank">
                         <div class="blur-in"></div>
                     </a>
                 </div>
 
                 <div class="l-3 rotate-top">
-                    <a href="https://elcheno.github.io/Contacts_List/" class="vibrate" target="_blank">
+                    <a href="https://elcheno.github.io/Contacts_List/" class="vibrate blur-out-contract" target="_blank">
                         <div class="blur-in"></div>
                     </a>
-                    <a href="https://www.instagram.com/ruben__02/?hl=en" class="vibrate" target="_blank">
+                    <a href="https://www.instagram.com/ruben__02/?hl=en" class="vibrate blur-out-contract" target="_blank">
                         <div class="blur-in"></div>
                     </a>
                 </div>
 
                 <div class="l-4 rotate-top">
-                    <a href="https://elcheno.github.io/Task_Manager/" class="vibrate" target="_blank">
+                    <a href="https://elcheno.github.io/Task_Manager/" class="vibrate blur-out-contract" target="_blank">
                         <div class="blur-in"></div>
                     </a>
-                    <nav target="_blank" class="vibrate">
+                    <gmail target="_blank" class="vibrate gmail blur-out-contract">
                         <div class="blur-in"></div>
-                    </nav>
+                    </gmail>
                 </div>
 
                 <div class="l-5 rotate-top">
-                    <a href="#" class="vibrate disabled" target="_blank">
+                    <a href="#" class="vibrate disabled blur-out-contract" target="_blank">
                         <div class="blur-in"></div>
                     </a>
                 </div>
@@ -61,6 +61,14 @@
         </div>
 
     </div>
+
+    <script>
+        let gmail = document.querySelector('.gmail');
+
+        gmail.onclick = () => {
+            navigator.clipboard.writeText('rubenca2312@gmail.com');
+        }
+    </script>
 
 </body>
 </html>

@@ -34,6 +34,7 @@ body{
 
 .wrapper .header p{
     font-size: 3.5rem;
+    font-weight: bold;
 }
 
 .wrapper .container{
@@ -150,7 +151,7 @@ body{
     background-size: 2.4rem;
 }
 
-nav:hover{
+gmail:hover{
     cursor: pointer;
 }
 
@@ -214,5 +215,17 @@ nav:hover{
     }
     100%{
         transform:translate(0)
+    }
+}
+
+.blur-out-contract:active{
+    animation:blur-out-contract 0.2s linear both
+}
+@keyframes blur-out-contract{
+    0%{
+        transform:scale(1);filter:blur(.01px);
+    }
+    100%{
+        transform:scale(0);filter:blur(12px);opacity:0
     }
 }
