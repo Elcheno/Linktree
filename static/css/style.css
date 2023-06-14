@@ -151,19 +151,16 @@ body{
     background-size: 2.4rem;
 }
 
+.subcontainer div a div, gmail div{
+    transition: -webkit-box-shadow 0.25s, -moz-box-shadow 0.25s, box-shadow 0.25s;
+}
+
 .subcontainer div a:hover div, gmail:hover div{
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 27px 7px rgba(255,255,255,1);
     -moz-box-shadow: 0px 0px 27px 7px rgba(255,255,255,1);
     box-shadow: 0px 0px 27px 7px rgba(255,255,255,1);
 }
-
-
-
-
-
-
-
 
 .rotate-center{
     animation:rotate-center 5s
