@@ -1,0 +1,125 @@
+*,::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Century Gothic", serif;
+}
+
+body{
+    background-color: #111111;
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper .header{
+    width: 50vw;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .header p{
+    font-size: 3.5rem;
+}
+
+.wrapper .container{
+    width: 40vw;
+    height: 60vh;
+    margin: auto;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .container{
+    background-image: url("./../img/background.gif");
+    background-position: center;
+    overflow: hidden;
+}
+
+.wrapper .container .subcontainer{
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+}
+
+.wrapper .container .subcontainer div{
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    color: black;
+    align-items: center;
+}
+
+.wrapper .container .subcontainer div div{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.l-1{
+    justify-content: center;
+}
+
+.l-2{
+    justify-content: space-evenly;
+}
+
+.l-3{
+    justify-content: space-around;
+}
+
+.l-4{
+    justify-content: space-evenly;
+}
+
+.l-5{
+    justify-content: center;
+}
+
+
+.rotate-center{
+    animation:rotate-center 5s
+}
+@keyframes rotate-center {
+    0%{
+        transform:rotate(0)}
+    100%{
+        transform:rotate(360deg)}
+}
+
+.rotate-top{
+    animation:rotate-top 5s linear
+}
+@keyframes rotate-top{
+    0% {
+        transform:rotate(0);transform-origin:top
+    }
+    100% {
+        transform:rotate(360deg);transform-origin:top
+    }
+}
+
+.blur-in{
+    animation:blur-in 2s linear both
+}
+@keyframes blur-in{
+    0%{
+        filter:blur(12px);opacity:0
+    }
+    100%{
+        filter:blur(0);opacity:1
+    }
+}
